@@ -15,7 +15,7 @@ further improving the model's performance by fusing joint position messages into
 we propose more low-parameter model variants, which maintain competitive accuracy and outperform other existing methods.
 Extensive experiments on publicly available benchmarks, such as InterHand2.6M, have demonstrated the effectiveness of our proposed approach.
 
-#### Getting started 🥰 💖
+#### Getting started 🥰 
 
 - Clone this repo.
 ```bash
