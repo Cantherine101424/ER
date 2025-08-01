@@ -1,19 +1,14 @@
 # ER 🚩
-## This repository is an official implementation of the paper  "ER: Extract-Regress Network for Interacting-Hand Reconstruction from a Monocular Image".
+## This repository is an official implementation of the paper  "ER: Extract-Regress Network for Precise 3D Reconstruction of Interacting Hands from Monocular Images".
 ![](three.jpg)
 ### Abstract
-Reconstructing two interacting hands from a monocular RGB image has posed a formidable challenge with two primary issues:
-the interference caused by the hands' similar appearances and the lack of complete visual cues from the occlusion of hands.
-To tackle these challenges, we propose the Extract-Regress Network ER, which consists of two modules: one for extracting the visual features Extract 
-and another for feature fusion and regressing 3D mesh hand vertices Regress. This approach addresses the aforementioned issues
-while enhancing the accuracy of hand reconstruction. 
-Specifically, the Extract module comprises two sub-modules: DeSim and DeOcc. 
-The DeSim sub-module is designed to decouple and capture appearance details of separate hands to address the finger-similarity issue, 
-while the DeOcc sub-module aims to process latent connections and spatial cues from the interacting hands through coupled 
-reasoning to solve the hand-truncated problem. Then, FuseFormer in the Regress module enhances the feature representation while 
-further improving the model's performance by fusing joint position messages into visual feature maps. Considering memory-constrained devices, 
-we propose more low-parameter model variants, which maintain competitive accuracy and outperform other existing methods.
-Extensive experiments on publicly available benchmarks, such as InterHand2.6M, have demonstrated the effectiveness of our proposed approach.
+Reconstructing two interacting hands from a monocular RGB image presents a formidable challenge due to similar appearances and mutual occlusions. To address these issues, we propose the Extract-Regress Network (ER), 
+a unified framework comprising specialized modules for visual feature extraction, feature fusion, and 3D mesh vertex regression. 
+The Extract module includes DeSim for decoupling and capturing appearance details of separate hands and DeOcc for processing latent connections and spatial clues from interacting hands. 
+The Regress module employs FuseJoint to enhance feature representation by fusing joint position messages into visual feature maps. 
+Our approach achieves state-of-the-art performance on the InterHand2.6M dataset, with a mean per joint position error (MPJPE) of 6.65 mm, 
+outperforming existing methods by significant margins. This work advances the field of image-based 3D hand reconstruction, 
+offering robust solutions for virtual reality, augmented reality, and human-computer interaction applications.
 
 #### Getting started 🥰 
 
