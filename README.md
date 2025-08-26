@@ -24,9 +24,15 @@ cd ER/main
 
 - Download HIC [[HOMEPAGE](https://files.is.tue.mpg.de/dtzionas/Hand-Object-Capture/)] [[annotations](https://drive.google.com/file/d/1oqquzJ7DY728M8zQoCYvvuZEBh8L8zkQ/view?usp=share_link)]. You need to download 1) all `Hand-Hand Interaction` sequences (`01.zip`-`14.zip`) and 2) some of `Hand-Object Interaction` seuqneces (`15.zip`-`21.zip`) and 3) MANO fits.
 #### Training
-We're in the process of organizing the work and will make a full announcement when it's done.🚀🚀🚀
+If you prefer not to train the model, you can simply obtain the pretrained model based different TinyViT backbones by downloading it from this link:
+https://drive.google.com/drive/folders/1FAOXmpHaTbFgW7yh956cGfuvqci0dBuP
 
 #### Testing
 ```bash
 python test.py
+```
+
+#### demo
+```bash
+python demo.py 
 ```
